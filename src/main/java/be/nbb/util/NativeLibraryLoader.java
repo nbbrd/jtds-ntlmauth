@@ -29,7 +29,7 @@ import java.util.Objects;
 import java.util.regex.Pattern;
 
 /**
- * Load an os-dependent library from a jar file.
+ * Tool to load os-dependent libraries from jar files.
  *
  * @author Philippe Charles
  */

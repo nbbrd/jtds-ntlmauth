@@ -12,14 +12,27 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <built.by>${project.name}</built.by>
+        <jtds.version>1.3.1</jtds.version>
         <jtds-dist-path>${download-path}/jtds-1.3.1-dist.zip</jtds-dist-path>
     </properties>
+    
+    <licenses>
+        <license>
+            <name>The GNU Lesser General Public License, Version 3.0</name>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+        </license>
+        <license>
+            <name>European Union Public Licence (EUPL)</name>
+            <url>https://joinup.ec.europa.eu/software/page/eupl/licence-eupl</url>
+        </license>
+    </licenses>
     
     <dependencies>
         <dependency>
             <groupId>net.sourceforge.jtds</groupId>
             <artifactId>jtds</artifactId>
-            <version>1.3.1</version>
+            <version>${jtds.version}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -41,9 +54,9 @@
                 <version>2.5</version>
                 <configuration>
                     <archive>                   
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        </manifest>
+                        <manifestEntries>
+                            <Built-By>${built.by}</Built-By>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>            
