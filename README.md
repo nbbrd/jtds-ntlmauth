@@ -14,4 +14,17 @@ To build this driver, you need to:
 2. Download the latest [jTDS distribution file](http://sourceforge.net/projects/jtds/files/)
 3. Set the property `jtds-dist-path` in `pom.xml` to the right path (for example `C:\temp\jtds-1.3.1-dist.zip`)
 4. Run `mvn clean build`
-5. The generated library is in the `target` folder
+5. The generated library is available in the `target` directory and also in the local repository
+
+## How to use
+
+* Build the library first
+* Put the generated library on the classpath or use the Maven reference (to the local repository):
+```xml
+<dependency>
+	<groupId>be.nbb</groupId>
+	<artifactId>jtds-ntlmauth</artifactId>
+	<version>1.3.1.0</version>
+</dependency>
+```
+* The connection parameters are exactly the same as [jTDS](http://jtds.sourceforge.net/doc.html) except that you don't need to deal with the lib path
