@@ -18,7 +18,7 @@ To build this driver, you need to:
 
 ## How to use
 
-* Build the library first
+* Download the library [here](https://github.com/nbbrd/jtds-ntlmauth/releases) or build it yourself
 * Put the generated library on the classpath or use the Maven reference (to the local repository):
 ```xml
 <dependency>
